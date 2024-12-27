@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\MinimalAPI_Application\MinimalAPI_Application.csproj"/>
+        <ProjectReference Include="..\MinimalAPI_DataAccess\MinimalAPI_DataAccess.csproj"/>
+        <ProjectReference Include="..\MinimalAPI_Domain\MinimalAPI_Domain.csproj"/>
+        <ProjectReference Include="..\MinimalAPI_TokenService\MinimalAPI_TokenService.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FastExpressionCompiler" Version="4.1.0"/>
+        <PackageReference Include="Mapster" Version="7.3.0"/>
+        <PackageReference Include="Mapster.Core" Version="1.2.1"/>
+        <PackageReference Include="MediatR" Version="12.2.0"/>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.4"/>
+        <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="2.2.0"/>
+        <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0"/>
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.4"/>
+        <PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.2.2"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
+    </ItemGroup>
+
+</Project>
