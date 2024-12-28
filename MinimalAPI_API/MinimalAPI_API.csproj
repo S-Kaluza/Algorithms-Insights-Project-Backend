@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>MinimalAPIWebApplication</RootNamespace>
+        <UserSecretsId>2db20563-29ce-4d7c-92b1-546e14586933</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\MinimalAPI_Application\MinimalAPI_Application.csproj"/>
+        <ProjectReference Include="..\MinimalAPI_DataAccess\MinimalAPI_DataAccess.csproj"/>
+        <ProjectReference Include="..\MinimalAPI_DependencyInjections\MinimalAPI_DependencyInjections.csproj"/>
+        <ProjectReference Include="..\MinimalAPI_Domain\MinimalAPI_Domain.csproj"/>
+        <ProjectReference Include="..\MinimalAPI_TokenService\MinimalAPI_TokenService.csproj"/>
+        <ProjectReference Include="..\MinimalAPI_UnitTests\MinimalAPI_UnitTests.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+</Project>
